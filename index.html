@@ -1,0 +1,65 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <h1 class="text-green-500 text-center font-bold text-4xl mt-10">
+        Form Validation In JavaScript
+    </h1>
+    <h4 class="text-blue-500 text-center font-bold text-2xl mt-4">
+        Sign Up
+    </h4>
+
+    <div class="container mx-auto mt-8">
+        <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+            <form action="#" onsubmit="return signupValidation()">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium">Name</label>
+                    <input type="text" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="name" autocomplete="off" />
+                    <span id="Name" class="text-red-500"> </span>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Email</label>
+                    <input type="text" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="emails" autocomplete="off" />
+                    <span id="emailids" class="text-red-500"> </span>
+                </div>
+
+                <div class="mb-4">
+                    <label for="user" class="block text-gray-700 font-medium">Username</label>
+                    <input type="text" name="user" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="user" autocomplete="off" />
+                    <span id="username" class="text-red-500"> </span>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Password</label>
+                    <input type="password" name="pass" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="pass" autocomplete="off" />
+                    <span id="passwords" class="text-red-500"> </span>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Confirm Password</label>
+                    <input type="password" name="conpass" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="conpass" autocomplete="off" />
+                    <span id="confrmpass" class="text-red-500"> </span>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Mobile Number</label>
+                    <input type="text" name="mobile" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="mobileNumber" autocomplete="off" />
+                    <span id="mobileno" class="text-red-500"> </span>
+                </div>
+
+                <input type="submit" name="submit" value="Submit" class="w-full bg-blue-500 text-white font-bold py-2 rounded-md hover:bg-blue-600" />
+                <input type="reset" name="reset" value="Reset" class="w-full bg-gray-300 text-gray-700 font-bold py-2 rounded-md hover:bg-gray-400 mt-2" />
+                <p class="mt-4 text-center">Already have an account? <a href="login.html" class="text-blue-500 hover:underline">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

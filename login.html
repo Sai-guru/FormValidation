@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <h1 class="text-green-500 text-center font-bold text-4xl mt-10">
+        Login Form Validation
+    </h1>
+
+    <h4 class="text-blue-500 text-center font-bold text-2xl mt-4">
+        Login
+    </h4>
+
+    <div class="container mx-auto mt-8">
+        <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+            <form action="#" onsubmit="return logValidation()">
+                <div class="mb-4">
+                    <label for="user" class="block text-gray-700 font-medium">Username</label>
+                    <input type="text" name="user" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="user" autocomplete="off" />
+                    <span id="username" class="text-red-500"> </span>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium">Password</label>
+                    <input type="password" name="pass" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" id="pass" autocomplete="off" />
+                    <span id="passwords" class="text-red-500"> </span>
+                </div>
+
+                <input type="submit" name="submit" value="Submit" class="w-full bg-green-500 text-white font-bold py-2 rounded-md hover:bg-green-600" />
+                <p class="mt-4 text-center">Don’t have an account? <a href="index.html" class="text-blue-500 hover:underline">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
