@@ -79,9 +79,9 @@ function signupValidation() {
         " ** user must write digits only not characters";
       return false;
     }
-    if (mobileNumber.length != 11) {
+    if (mobileNumber.length != 10) {
       document.getElementById("mobileno").innerHTML =
-        " ** Mobile Number must be 11 digits only";
+        " ** Mobile Number must be 10 digits only";
       return false;
     }
   }
